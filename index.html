@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html ng-app="Samvid">
+<head>
+    <!-- Required meta tags -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f4f5f6">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f4f5f6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="author" content="Shubham Agrawal">
+    <meta name="description" content="SAMVID is the official annual Techno Cultural college festival of Shri Shankaracharya Technical Campus, Bhilai">
+    <meta name="keywords" content="Samvid, 2020, 2k20, ssgi, sstc, ssec, ssitm, sscet, shankaracharya, official techno-cultural fest,
+		fest, festival, science, engineering, techno-cultural, bhilai, durg, Shri Shankaracharya Technical Campus, Bhilai,
+		Samvid is the official techno-cultural fest of Shri Shankaracharya Technical Campus, Bhilai, wdct, web, design, creative, team,
+		coding, development, web development, research and development, e cell, entrepreneurship, robotics, robo cell,
+		robowars, hackathon, events, core cell, management, official, best fest of bhilai, samvid nites, largest, central india, largest fest in central India, gaming, electronics, computer science events, mechatronics, proshow, pro-show, rampwalk, fashion, dance" />
+
+    <!-- og-tags -->
+    <meta property="og:url" content="http://samvid.org.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SAMVID 2020 - Machaatey Raho">
+    <meta property="og:image" content="images/samvid.png">
+    <meta property="og:description" content="Welcome to the Seventh Edition of SAMVID - Techno-Cultural college fest of Shri Shankaracharya Technical Campus, Bhilai">
+
+    <!--twitter card data-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="http://samvid.org.in/">
+    <meta name="twitter:creator" content="Shubham Agrawal">
+    <meta name="twitter:title" content="SAMVID 2020 - Machaatey Raho">
+    <meta name="twitter:image" content="images/samvid.png">
+    <meta name="twitter:description" content="Welcome to the Eighth Edition of SAMVID - Techno-Cultural college fest of Shri Shankaracharya Technical Campus, Bhilai">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link id="icon" rel="icon" href="App/images/favicon.png">
+    <link href="Content/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133827990-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133827990-1');
+    </script>
+
+    <!-- Basic Page Needs
+        ================================================== -->
+    <meta charset="utf-8">
+    <!--HEAD-->
+    <title>Samvid'20 | Techno-Cultural college fest of Shri Shankaracharya Technical Campus, Bhilai </title>
+    <meta name="description" content="Technical Symposium">
+    <meta name="author" content="Shubham Agrawal">
+
+
+    <!-- Mobile Specific Metas
+    0		================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+
+    <i id="burger" class="material-icons" onclick="burger()">menu</i>
+<i id="quit" class="material-icons" onclick="quit()">clear</i>
+<div id="links">
+    <a href="#!Home" onclick="quit()">Home</a>
+    <a href="#!About" onclick="quit()">About</a>
+    <a href="#!Events" onclick="quit()">Events</a>
+    <a href="#!Gallery" onclick="quit()">Gallery</a>
+    <a href="#!Activites" onclick="quit()">Activites</a>
+    <a href="#!Sponsors" onclick="quit()">Sponsors</a>
+    <a href="#!Contact" onclick="quit()">Contact</a>
+</div>
+    <div id="view">
+    <div ng-include=""></div>
+    <div ng-view=""></div>
+    <div ng-include=""></div>
+    </div>
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/jquery.fullpage.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="App/app.js"></script>
+    <script src="App/controller/about.controller.js"></script>
+    <script src="App/controller/activites.controller.js"></script>
+    <script src="App/controller/contact.controller.js"></script>
+    <script src="App/controller/events.controller.js"></script>
+    <script src="App/controller/gallery.controller.js"></script>
+    <script src="App/controller/home.controller.js"></script>
+    <script src="App/controller/sponsors.controller.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function burger(){
+  var burger = document.getElementById('burger');
+  var links = document.getElementById('links');
+  var quit = document.getElementById('quit');
+  var view = document.getElementById('view');
+  view.style.display = 'none';
+  burger.style.padding = '16px 16px 200vw 200vw';
+  links.style.display = 'flex';
+  quit.style.display = 'inline';
+}
+
+function quit(){
+  var burger = document.getElementById('burger');
+  var links = document.getElementById('links');
+  var quit = document.getElementById('quit');
+  var view = document.getElementById('view');
+  view.style.display = 'block';
+  burger.style.padding = '16px 16px 32px 32px';
+  links.style.display = 'none';
+  quit.style.display = 'none';
+}
+    </script>
+</body>
+</html>
