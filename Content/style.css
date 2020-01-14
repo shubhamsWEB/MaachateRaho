@@ -37,6 +37,7 @@ html {
     height: 100vh;
     background: url('../App/images/homeBg.png');
     background-size: cover;
+    background-origin: inherit;
 }
 #home-about-section {
     width: 100vw;
@@ -82,6 +83,12 @@ html {
     margin-left: 2%;
      float: left;
 }
+.img-center {
+    margin-top: 7%;
+    margin-left: 30%;
+    width: 500px;
+    height: 500px;
+}
 .heading {
     padding: 1%;
     font-family: badaboom;
@@ -104,6 +111,18 @@ html {
     color:darkorchid;
     font-size: 2rem;
 }
+.stats-heading {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #F1A014;
+}
+.stats-content {
+    font-family: avenger;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    color: #e65c00;
+
+}
 @media only screen and (min-width: 750px) and (max-width: 1400px) {
  .mobileview {
         display: none;
@@ -121,11 +140,16 @@ html {
         font-size: 1rem;
     }
     .aboutus-svg {
-        width: 200px;
+        width: 100%;
         height: 200px;
         transform: rotate(-60deg);
-        margin-left: 20%;
         float: none;
+    }
+    .img-center {
+        margin-left:0;
+        padding: 15%;
+        width: 100%;
+        height: 400px;
     }
     .stats-svg {
     width: 250px;
@@ -136,6 +160,16 @@ html {
     }
     .laptopview {
         display: none;
+    }
+    .stats-heading {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .stats-content {
+        font-family: avenger;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    
     }
 }
 
@@ -178,7 +212,12 @@ html {
     color: white;
     font-size: 3em;
     font-family: badaboom;
-    z-index: 10;
+    z-index: 99;
+    transition: .4s ease-in-out;
+  }
+  #links a:hover {
+    font-size: 3.2em;
+    color: lawngreen;
   }
   @media only screen and (max-width: 420px) {
       #links {
@@ -187,4 +226,10 @@ html {
       .contact-page {
             padding: 5%;
       }
+  }
+  .z-index1 {
+      z-index: 1;
+  }
+  .z-index99 {
+      z-index: 99;
   }
