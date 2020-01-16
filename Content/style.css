@@ -36,7 +36,7 @@ html {
     width: 100vw;
     height: 100vh;
     background: url('../App/images/homeBg.png');
-    background-size: 1375px 630px;
+    background-size: 100vw 100vh;
     background-origin: inherit;
 }
 #home-about-section {
@@ -167,10 +167,6 @@ html {
     }
 }
 @media only screen and (max-width: 420px) {
-    #home-landing-section {
-        height: 105vh;
-        background-size: 360px 640px;
-    }
     .heading {
         font-size: 5rem;
     }
@@ -188,6 +184,7 @@ html {
         float: none;
     }
     .img-center {
+        margin-top: 1%;
         margin-left:0;
         width: 100%;
         height: 600px;
