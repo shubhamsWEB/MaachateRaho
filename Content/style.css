@@ -306,3 +306,168 @@ html {
 	100%{background: #f44336;}
 }
 
+.event-container {
+    flex-basis: auto;
+    display: flex;
+    height: 100vh;
+}
+.section {
+	margin-left: 0;
+	background-size: cover;
+	background-position: center;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+	flex-grow: 2;
+	overflow: hidden;
+}
+
+.section:hover::before {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.section::before {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	transition: all 0.4s;
+}
+
+.garosh::before {
+	background: rgba(199, 156, 110, 0.3);
+}
+
+.thrall::before {
+	background: rgba(0, 112, 222, 0.3);
+}
+
+.valeera::before {
+	background: rgba(255, 245, 105, 0.3);
+}
+
+.uther::before {
+	background: rgba(245, 140, 186, 0.3);
+}
+
+.rexxar::before {
+	background: rgba(171, 212, 115, 0.3);
+}
+
+.malfurion::before {
+	background: rgba(255, 125, 10, 0.3);
+}
+
+.guldan::before {
+	background: rgba(148, 130, 201, 0.3);
+}
+
+.jaina::before {
+	background: rgba(105, 204, 240, 0.3);
+}
+
+.anduin::before {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.active::before {
+	opacity: 0;
+}
+
+.shrink {
+	flex-grow: 1;
+}
+
+.garosh {
+	background-image: url("http://res.cloudinary.com/aca/image/upload/v1522330101/Garrosh_eyg3ts.jpg");
+}
+
+.thrall {
+	background-image: url("http://res.cloudinary.com/aca/image/upload/v1522330102/Thrall_ms4ken.jpg");
+}
+
+.valeera {
+	background-image: url("http://res.cloudinary.com/aca/image/upload/v1522330102/Valeera_jc3g07.jpg");
+}
+
+.uther {
+	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370372/Uther_xjokba.jpg");
+}
+
+.rexxar {
+	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370371/Rexxar_febeyc.jpg");
+}
+
+.malfurion {
+	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370371/Malfurion_ebntog.jpg");
+}
+
+.guldan {
+	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370371/Gul_dan_tlvgwm.jpg");
+}
+
+.jaina {
+	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370372/Jaina_nkl9kb.jpg");
+}
+
+.anduin {
+	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370372/Anduin_fswwk0.jpg");
+}
+
+.garosh .text {
+	background: rgba(199, 156, 110, 0.5);
+}
+
+.thrall .text {
+	background: rgba(0, 112, 222, 1);
+}
+
+.valeera .text {
+	background: rgba(255, 245, 105, 1);
+}
+
+.uther .text {
+	background: rgba(245, 140, 186, 1);
+}
+
+.rexxar .text {
+	background: rgba(171, 212, 115, 1);
+}
+
+.malfurion .text {
+	background: rgba(255, 125, 10, 1);
+}
+
+.guldan .text {
+	background: rgba(148, 130, 201, 1);
+}
+
+.jaina .text {
+	background: rgba(105, 204, 240, 1);
+}
+
+.anduin .text {
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.text {
+	font-size: 5rem;
+	position: relative;
+	top: -35%;
+	text-align: center;
+	width: 100%;
+	display: none;
+    transition: all 0.4s;
+    font-family: badaboom;
+}
+
+.active .text {
+	width: 110%;
+	opacity: 1;
+	transform: rotate(-10deg);
+	position: relative;
+	left: -5%;
+	mix-blend-mode: screen;
+	display: inline-block;
+}
+

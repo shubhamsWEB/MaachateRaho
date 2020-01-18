@@ -70,7 +70,8 @@
 
         gtag('config', 'UA-133827990-1');
     </script>
-
+    
+    
     <!-- Basic Page Needs
         ================================================== -->
     <meta charset="utf-8">
@@ -86,26 +87,25 @@
 
 </head>
 <body>
-
+    <img src="App/images/samvid.png" style="position: fixed" class="z-index99" width="100" height="100">
     <i id="burger" class="material-icons z-index99" onclick="burger()">menu</i>
 <i id="quit" class="material-icons z-index99" onclick="quit()">clear</i>
 <div id="links">
     <a href="#!Home" onclick="quit()">Home</a>
     <a href="#!About" onclick="quit()">About</a>
     <a href="#!Events" onclick="quit()">Events</a>
-    <a href="#!Gallery" onclick="quit()">Social Wall</a>
+    <a href="#!SocialWall" onclick="quit()">Social Wall</a>
     <a href="#!Activites" onclick="quit()">Activites</a>
     <a href="#!Sponsors" onclick="quit()">Sponsors</a>
     <a href="#!Contact" onclick="quit()">Contact</a>
 </div>
-    <div id="view">
+<div id="view">
     <div ng-include=""></div>
     <div ng-view=""></div>
     <div ng-include=""></div>
     </div>
 
     <script src="Scripts/jquery-3.4.1.min.js"></script>
-    <script src="Scripts/jquery.fullpage.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
     <script src="Scripts/angular-ui/ui-bootstrap.min.js"></script>

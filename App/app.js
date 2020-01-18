@@ -26,7 +26,7 @@ app.config(function ($routeProvider) {
         controller: 'contactController',
         controllerAs: 'contact'
     });
-    $routeProvider.when('/Gallery', {
+    $routeProvider.when('/SocialWall', {
         templateUrl: 'App/views/gallery.html',
         controller: 'galleryController',
         controllerAs: 'gallery'

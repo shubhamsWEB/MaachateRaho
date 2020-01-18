@@ -10,6 +10,5 @@
          vm.loading = false;
          });
          
-        $('#fullpage').fullpage();
     };
 })();
