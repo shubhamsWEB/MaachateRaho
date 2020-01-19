@@ -513,3 +513,19 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
+.stats-main {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.stats-main:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E65C00;
+    border-radius: 50% 50% 50% 50%/50% 50% 100% 100%;
+}
