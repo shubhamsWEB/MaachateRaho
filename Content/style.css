@@ -29,19 +29,19 @@ html {
     overflow: hidden;
 }
 #fullpage section {
-    height: 100vh;
+    height: 105vh;
     
 }
 #home-landing-section {
     width: 100vw;
     height: 100vh;
-    background: url('../App/images/homeBg.png');
+    background: url('../App/images/homeBg.jpg');
     background-size: 100vw 100vh;
     background-origin: inherit;
 }
 #home-about-section {
     width: 100vw;
-    height: 105vh;
+    height: 100vh;
     background: #ffe259;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -49,15 +49,14 @@ html {
        }
 #home-stats-section {
     width: 100vw;
-    height: 105vh;
-    background: #ffe259;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    height: 100vh;
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #home-theme-section {
     width: 100vw;
-    height: 105vh;
+    height: 100vh;
     background: #ec008c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -130,7 +129,8 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     text-align: center;
     font-family: badaboom;
     letter-spacing: .5px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    color:#f2aa4cff
 }
 .aboutus-heading {
     color: 	#C71585;
@@ -392,40 +392,26 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
 }
 
 .garosh {
-	background-image: url("http://res.cloudinary.com/aca/image/upload/v1522330101/Garrosh_eyg3ts.jpg");
+	background-image: url(../App/images/sports.jpg);
 }
 
 .thrall {
-	background-image: url("http://res.cloudinary.com/aca/image/upload/v1522330102/Thrall_ms4ken.jpg");
+	background-image: url(../App/images/technical.jpg);
 }
 
 .valeera {
-	background-image: url("http://res.cloudinary.com/aca/image/upload/v1522330102/Valeera_jc3g07.jpg");
+	background-image: url(../App/images/informals.jpg);
 }
 
 .uther {
-	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370372/Uther_xjokba.jpg");
+	background-image: url(../App/images/cultural.jpg);
 }
 
 .rexxar {
-	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370371/Rexxar_febeyc.jpg");
+	background-image: url(../App/images/conclave.jpg);
 }
 
-.malfurion {
-	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370371/Malfurion_ebntog.jpg");
-}
 
-.guldan {
-	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370371/Gul_dan_tlvgwm.jpg");
-}
-
-.jaina {
-	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370372/Jaina_nkl9kb.jpg");
-}
-
-.anduin {
-	background-image: url("https://res.cloudinary.com/aca/image/upload/v1490370372/Anduin_fswwk0.jpg");
-}
 
 .garosh .text {
 	background: rgba(199, 156, 110, 0.5);
@@ -445,22 +431,6 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
 
 .rexxar .text {
 	background: rgba(171, 212, 115, 1);
-}
-
-.malfurion .text {
-	background: rgba(255, 125, 10, 1);
-}
-
-.guldan .text {
-	background: rgba(148, 130, 201, 1);
-}
-
-.jaina .text {
-	background: rgba(105, 204, 240, 1);
-}
-
-.anduin .text {
-	background: rgba(255, 255, 255, 0.75);
 }
 
 .text {
@@ -528,4 +498,24 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     height: 100%;
     background: #E65C00;
     border-radius: 50% 50% 50% 50%/50% 50% 100% 100%;
+}
+
+#home-stats-section {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+#home-stats-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
 }
