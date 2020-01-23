@@ -26,7 +26,9 @@
                 }
                 //DOWN
                 if (keyCode == 40) {
+                    if(vm.scroll <2520) {
                     vm.scroll += 630;
+                    }
                     $('html, body').animate({ scrollTop: vm.scroll }, 100);
                     return false;
                 }
