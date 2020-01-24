@@ -61,6 +61,10 @@ html {
     background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+#home-footer-section {
+    width: 100vw;
+    height: 100vh;
+}
 #aboutus-page {
     width: 100vw;
     height: auto;
@@ -250,8 +254,8 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     border-radius: 0% 0% 0% 100%;
     transition: 1s;
     cursor: pointer;
-    -webkit-animation: pulse 10s infinite;
-	animation: pulse 10s infinite;
+    -webkit-animation: colors 10s infinite;
+	animation: colors 10s infinite;
   }
   
   #quit{
@@ -301,7 +305,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
   .z-index99 {
       z-index: 99;
   }
-  @-webkit-keyframes pulse
+  @-webkit-keyframes colors
 {
 	0%{background: #f44336;}
 	25%{background: #e91e63;}
@@ -551,7 +555,5 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
   .swap-on-hover:hover > .swap-on-hover__front-image{
     opacity: 0;
   }
-.swing {
-    transition: 1s ease-in-out infinite;
-}
+
   
