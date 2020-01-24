@@ -17,6 +17,10 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+.mojo-animation {
+    text-decoration: none !important;
+    color: #673ab7 !important;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -115,6 +119,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     margin-left: 28%;
     width: 500px;
     height: 500px;
+
 }
 .heading {
     z-index: 1;
@@ -210,8 +215,8 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     }
     .img-center {
         margin-top: 40%;
-        margin-left:0;
-        width: 85%;
+        margin-left:1%;
+        width: 88%;
         height: 400px;
     }
     
