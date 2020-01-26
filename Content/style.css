@@ -492,6 +492,13 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
+#contactus-page
+{
+    background: #f857a6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
 .stats-main {
     position: relative;
     justify-content: center;
@@ -527,38 +534,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
-.swap-on-hover {
-    position: relative;	
-      margin:  0 auto;
-      max-width: 400px;
-  }
-  
-  /* Select the image and make it absolute to the container */
-  .swap-on-hover img {
-    position: absolute;
-    top:0;
-    left:0;
-      overflow: hidden;
-      /* Sets the width and height for the images*/
-      width: 100%;
-      
-  }
-  
-  /* 
-      We set z-index to be higher than the back image, so it's alwyas on the front.
-  
-  We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
-  */
-  .swap-on-hover .swap-on-hover__front-image {
-    z-index: 9999;
-    transition: opacity .5s linear;
-    cursor: pointer;
-  }
-  
-  /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
-  .swap-on-hover:hover > .swap-on-hover__front-image{
-    opacity: 0;
-  }
+
 .events {
     height: 100%;
     width: 100%;
