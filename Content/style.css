@@ -486,7 +486,6 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
-<<<<<<< HEAD
 #contactus-page
 {
     background: #f857a6;  /* fallback for old browsers */
@@ -495,9 +494,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     
 }
 .stats-main {
-=======
 .events-shape {
->>>>>>> f295f9de827ca6bb2f16f78e94585cf0a3c55b13
     position: relative;
     justify-content: center;
     overflow: hidden;
@@ -545,14 +542,12 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
 .event-list {
     list-style-type: none;
 }
-<<<<<<< HEAD
   .sub-events {
       font-family: badaboom;
       color: ivory !important;
     text-align: left !important;
     font-size: 1.5rem !important;
   }
-=======
 .sub-events {
     font-family: 'Kanit', sans-serif;
     color: ivory !important;
@@ -1037,4 +1032,3 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
       transform: translateY(0px);
     }
   }
->>>>>>> f295f9de827ca6bb2f16f78e94585cf0a3c55b13
