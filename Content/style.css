@@ -416,24 +416,25 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
 
 
 
-.sports .text {
-	background: rgba(199, 156, 110, 0.5);
+.sports .text button {
+  background: rgba(171, 212, 115, 1);
+
 }
 
-.technical .text {
-	background: rgba(0, 112, 222, 1);
+.technical .text button {
+	background: #1488CC
 }
 
-.informals .text {
+.informals .text button {
 	background: rgba(255, 245, 105, 1);
 }
 
-.cultural .text {
+.cultural .text button {
 	background: rgba(245, 140, 186, 1);
 }
 
-.conclave .text {
-	background: rgba(171, 212, 115, 1);
+.conclave .text button {
+  background: rgb(243, 228, 210);
 }
 
 .text {
@@ -486,6 +487,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
+<<<<<<< HEAD
 #contactus-page
 {
     background: #f857a6;  /* fallback for old browsers */
@@ -495,12 +497,15 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
 }
 .stats-main {
 .events-shape {
+=======
+.events-shape-technical {
+>>>>>>> 2990dc85bf9ed6b8a59b2a8f7a93617c9ff639af
     position: relative;
     justify-content: center;
     overflow: hidden;
     transition: .5s all ease-in-out;
 }
-.events-shape:before {
+.events-shape-technical:before {
     content: '';
     position: absolute;
     top: 0;
@@ -510,7 +515,76 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     background: #1488CC;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;}
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  }
+
+  .events-shape-cultural {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.events-shape-cultural:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(211, 87, 141);
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  }
+  
+  .events-shape-sports {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.events-shape-sports:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(132, 170, 78);
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  }
+  
+  .events-shape-informals {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.events-shape-informals:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(224, 150, 59);  /* fallback for old browsers */
+border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  }
+  
+  .events-shape-conclave {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.events-shape-conclave:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(46, 199, 115);
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  } 
 
 #home-stats-section {
     position: relative;
@@ -531,23 +605,56 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
-
+.swap-on-hover {
+    position: relative;	
+      margin:  0 auto;
+      max-width: 400px;
+  }
+  
+  /* Select the image and make it absolute to the container */
+  .swap-on-hover img {
+    position: absolute;
+    top:0;
+    left:0;
+      overflow: hidden;
+      /* Sets the width and height for the images*/
+      width: 100%;
+      
+  }
+  
+  /* 
+      We set z-index to be higher than the back image, so it's alwyas on the front.
+  
+  We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+  */
+  .swap-on-hover .swap-on-hover__front-image {
+    z-index: 9999;
+    transition: opacity .5s linear;
+    cursor: pointer;
+  }
+  
+  /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+  .swap-on-hover:hover > .swap-on-hover__front-image{
+    opacity: 0;
+  }
 .events {
     height: 100vh;
     overflow: scroll    ;
     width: 100%;
-    background: #1488CC;
 }
 
 .event-list {
     list-style-type: none;
 }
+<<<<<<< HEAD
   .sub-events {
       font-family: badaboom;
       color: ivory !important;
     text-align: left !important;
     font-size: 1.5rem !important;
   }
+=======
+>>>>>>> 2990dc85bf9ed6b8a59b2a8f7a93617c9ff639af
 .sub-events {
     font-family: 'Kanit', sans-serif;
     color: ivory !important;
@@ -1032,3 +1139,7 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
       transform: translateY(0px);
     }
   }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 2990dc85bf9ed6b8a59b2a8f7a93617c9ff639af
