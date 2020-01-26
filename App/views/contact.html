@@ -1,64 +1,53 @@
-﻿<center>
+﻿<style>
+.don
+{
+  width: 100%;
+  height: 200px;
+}
+</style>
+
+<center>
   <div class="lottieloader" ng-show="about.loading">
       <lottie-player
       src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay >
   </div>
 </center>
 <div ng-hide="about.loading" class="z-index1">
-  <div id="aboutus-page">
+  <div id="contactus-page">
       <center>
           <h1 class="heading" style="color: #f2aa4cff;">Our Team</span></h1>
       </center> 
-  </div>
-      
       <div class="container contact-page">
         <div class="row contact-page">
-        <div class="col-md-3">
-          <figure class="swap-on-hover"> 
-            <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-            <img src="App/images/con1.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-          </figure>     
-          </div>
-          <div class="col-md-3">
-            <figure class="swap-on-hover"> <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-              <img src="App/images/con1.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-            </figure> 
-          </div>
-          <div class="col-md-3">
-            <figure class="swap-on-hover"> <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-              <img src="App/images/con1.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-            </figure> 
-          </div>
-          <div class="col-md-3">
-            <figure class="swap-on-hover"> <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-              <img src="App/images/con1.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-            </figure> 
-          </div>
-        </div>
-        <div class="row contact-page" style="margin-top: 30%;">
-          <div class="col-md-3">
-            <figure class="swap-on-hover"> 
-              <img src="App/images/con1.png" width="100% " style="margin-top: 50px;"  class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-              <img src="App/images/con2.png" width="100% " style="margin-top: 50px;"  class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-            </figure>     
+          <div class="col-md-3" id="m_div">
+
             </div>
-            <div class="col-md-3">
-              <figure class="swap-on-hover"> <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-                <img src="App/images/con1.png" width="100% " style="margin-top: 50px;"  class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-              </figure> 
-            </div>
-            <div class="col-md-3">
-              <figure class="swap-on-hover"> <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-                <img src="App/images/con1.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-              </figure> 
-            </div>
-            <div class="col-md-3">
-              <figure class="swap-on-hover"> <img src="App/images/con2.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__front-image  " alt="frame"> 
-                <img src="App/images/con1.png" width="100% " style="margin-top: 50px;" " class="card-img-top swap-on-hover__back-image  " alt="frame"> 
-              </figure> 
-            </div>
-          </div>
-        </div> 
+            
+              </div>
+                 </div>
+  </div>
+      
+      
+                 <script type="text/javascript">
+                  var or =[
+                'https://preview.uideck.com/items/interior/assets/images/team/team-1.jpg',
+                'https://preview.uideck.com/items/interior/assets/images/team/team-2.jpg',
+                'https://preview.uideck.com/items/interior/assets/images/team/team-3.jpg'
+                ];
+                var or_hover = [
+                'https://preview.uideck.com/items/interior/assets/images/about/about-2.png',
+                'https://preview.uideck.com/items/interior/assets/images/about/about-1.png',
+                'https://preview.uideck.com/items/interior/assets/images/banner/banner-image.png'
+                ]
+                
+                for(var i=0;i<or.length;i++) {
+                $('#m_div').append('<img style="" class="don" onmouseout="this.src=this.getAttribute(\'data-src\')" onmouseover="this.src=this.getAttribute(\'data-src-hover\')" data-src='+or[i]+' data-src-hover='+or_hover[i]+' src='+or[i]+' >');
+                }
+                </script>
+
+
+
+          
      
         
 
