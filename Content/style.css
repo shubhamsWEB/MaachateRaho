@@ -143,6 +143,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     background: -webkit-linear-gradient(to right, #e65c00, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #e65c00, #f9d423);
   text-shadow: 5px 5px #e65c00;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -334,6 +335,15 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
   .z-index99 {
       z-index: 99;
   }
+  @keyframes colors
+{
+	0%{background: #f44336;}
+	25%{background: #e91e63;}
+	50%{background: #9c2780;}
+	75%{background: #673ab7;}
+	100%{background: #f44336;}
+
+}
   @-webkit-keyframes colors
 {
 	0%{background: #f44336;}
@@ -502,8 +512,6 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     transform: scaleX(1.5);
 }
 
-.stats-main {
-.events-shape {
 .events-shape-technical {
     position: relative;
     justify-content: center;
@@ -651,15 +659,12 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 .event-list {
     list-style-type: none;
 }
-<<<<<<< HEAD
   .sub-events {
       font-family: badaboom;
       color: ivory !important;
     text-align: left !important;
     font-size: 1.5rem !important;
   }
-=======
->>>>>>> 2990dc85bf9ed6b8a59b2a8f7a93617c9ff639af
 .sub-events {
     font-family: 'Kanit', sans-serif;
     color: ivory !important;
@@ -1032,7 +1037,7 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     border-color: transparent transparent #ff6d36 transparent;
     border-width: 0 5px 5px 0;
   }
-  //Contact us
+  /* Contact us */
   .our-team{ text-align: center; }
 .our-team .pic{
     display: inline-block;
@@ -1223,7 +1228,4 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
       transform: translateY(0px);
     }
   }
-<<<<<<< HEAD
-=======
   
->>>>>>> 2990dc85bf9ed6b8a59b2a8f7a93617c9ff639af
