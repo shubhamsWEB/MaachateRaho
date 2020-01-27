@@ -1,10 +1,84 @@
 ﻿<style>
-.don
-{
-  width: 100%;
-  height: 200px;
+  .our-team{ text-align: center; }
+.our-team .pic{
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.our-team .pic:before,
+.our-team .pic:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 100px 0 0 rgba(255, 255, 255, 0.01) inset, 0 100px 0 rgba(255, 255, 255, 0.01) inset, -100px 0 0 rgba(255, 255, 255, 0.01) inset, 0 -100px 0 rgba(255, 255, 255, 0.01) inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 300ms linear 0s;
+}
+.our-team .pic:after{
+    transform: rotate(45deg);
+}
+.our-team:hover .pic:after,
+.our-team:hover .pic:before{
+    box-shadow: 5px 0 0#FEDC0D inset, 0 5px 0 #F7343C inset, -5px 0 0 #41A6DF inset, 0 -5px 0 #F7343C inset;
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 300ms linear 0s;
+}
+.our-team:hover .pic img{
+    transform: scale(1.1);
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d33f49;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #333;
+    text-transform: capitalize;
+}
+.our-team .social{
+    padding: 0;
+    margin: 25px 0 0 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0 15px 0 15px;
+    background: #d33f49;
+    font-size: 15px;
+    color: #fff;
+    transition: all 300ms linear 0s;
+}
+.our-team:hover .social li a{
+    border-radius: 15px 0 15px 0;
+    background: #eca400;
+}
+@media only screen and (max-width: 767px){
+    .our-team{ margin-bottom: 30px; }
 }
 </style>
+
 
 <center>
   <div class="lottieloader" ng-show="about.loading">
@@ -13,19 +87,314 @@
   </div>
 </center>
 <div ng-hide="about.loading" class="z-index1">
-  <div id="contactus-page">
+  <div id="contact-page">
       <center>
           <h1 class="heading" style="color: #f2aa4cff;" >Our Team</span></h1>
       </center> 
       <div class="container contact-page">
-        <div class="row contact-page">
-          <div class="col-md-3" id="m_div">
-
-            </div>
-            
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-4">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img src="App/images/con1.jpg">
+                      </div>
+                      <h3 class="title">Aditya Naidu</h3>
+                      <span class="post">Web Developer</span>
+                      <ul class="social">
+                          <li><a href="#" class="fab fa-facebook"></a></li>
+                          <li><a href="#" class="fab fa-twitter"></a></li>
+                          <li><a href="#" class="fab fa-google-plus"></a></li>
+                      </ul>
+                  </div>
               </div>
-                 </div>
+              <div class="col-sm-4">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="App/images/con1.jpg">
+                    </div>
+                    <h3 class="title">Aditya Naidu</h3>
+                    <span class="post">Web Developer</span>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-twitter"></a></li>
+                        <li><a href="#" class="fab fa-google-plus"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="our-team">
+                  <div class="pic">
+                      <img src="App/images/con1.jpg">
+                  </div>
+                  <h3 class="title">Aditya Naidu</h3>
+                  <span class="post">Web Developer</span>
+                  <ul class="social">
+                      <li><a href="#" class="fab fa-facebook"></a></li>
+                      <li><a href="#" class="fab fa-twitter"></a></li>
+                      <li><a href="#" class="fab fa-google-plus"></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="App/images/con1.jpg">
+                </div>
+                <h3 class="title">Aditya Naidu</h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-google-plus"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="App/images/con1.jpg">
+              </div>
+              <h3 class="title">Aditya Naidu</h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                  <li><a href="#" class="fab fa-facebook"></a></li>
+                  <li><a href="#" class="fab fa-twitter"></a></li>
+                  <li><a href="#" class="fab fa-google-plus"></a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="our-team">
+            <div class="pic">
+                <img src="App/images/con1.jpg">
+            </div>
+            <h3 class="title">Aditya Naidu</h3>
+            <span class="post">Web Developer</span>
+            <ul class="social">
+                <li><a href="#" class="fab fa-facebook"></a></li>
+                <li><a href="#" class="fab fa-twitter"></a></li>
+                <li><a href="#" class="fab fa-google-plus"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="our-team">
+          <div class="pic">
+              <img src="App/images/con1.jpg">
+          </div>
+          <h3 class="title">Aditya Naidu</h3>
+          <span class="post">Web Developer</span>
+          <ul class="social">
+              <li><a href="#" class="fab fa-facebook"></a></li>
+              <li><a href="#" class="fab fa-twitter"></a></li>
+              <li><a href="#" class="fab fa-google-plus"></a></li>
+          </ul>
+      </div>
   </div>
+  <div class="col-sm-4">
+    <div class="our-team">
+        <div class="pic">
+            <img src="App/images/con1.jpg">
+        </div>
+        <h3 class="title">Aditya Naidu</h3>
+        <span class="post">Web Developer</span>
+        <ul class="social">
+            <li><a href="#" class="fab fa-facebook"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-google-plus"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="our-team">
+      <div class="pic">
+          <img src="App/images/con1.jpg">
+      </div>
+      <h3 class="title">Aditya Naidu</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social">
+          <li><a href="#" class="fab fa-facebook"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+      </ul>
+  </div>
+</div>
+       
+              <div class="col-sm-4">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img src="App/images/con1.jpg">
+                      </div>
+                      <h3 class="title">Kristiana</h3>
+                      <span class="post">Web Designer</span>
+                      <ul class="social">
+                          <li><a href="#" class="fab fa-facebook"></a></li>
+                          <li><a href="#" class="fab fa-twitter"></a></li>
+                          <li><a href="#" class="fab fa-google-plus"></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+
+         
+      </div>
       
       
                  <script type="text/javascript">
@@ -35,9 +404,9 @@
                 'https://preview.uideck.com/items/interior/assets/images/team/team-3.jpg'
                 ];
                 var or_hover = [
-                'https://preview.uideck.com/items/interior/assets/images/about/about-2.png',
-                'https://preview.uideck.com/items/interior/assets/images/about/about-1.png',
-                'https://preview.uideck.com/items/interior/assets/images/banner/banner-image.png'
+                'https://preview.uideck.com/items/interior/assets/images/about/about-2.jpg',
+                'https://preview.uideck.com/items/interior/assets/images/about/about-1.jpg',
+                'https://preview.uideck.com/items/interior/assets/images/banner/banner-image.jpg'
                 ]
                 
                 for(var i=0;i<or.length;i++) {

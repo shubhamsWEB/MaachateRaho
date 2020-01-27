@@ -45,6 +45,18 @@ html {
     background-size: 100vw 100vh;
     background-origin: inherit;
 }
+@media only screen and (max-width: 420px) {
+  #home-landing-section {
+    width: 100vw;
+    height: 100vh;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100vw 100vh;
+    background-origin: inherit;
+}
+  
+ }
 #home-about-section {
     width: 100vw;
     height: 100vh;
@@ -196,19 +208,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
         display: none;
     }
 }
-@media only screen and (max-width: 420px) {
-  #home-landing-section {
-    width: 100vw;
-    height: 100vh;
-    background: #f12711;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    background-size: 100vw 100vh;
-    background-origin: inherit;
-}
-  
- }
 
 @media only screen and (max-width: 420px) {
     .heading {
@@ -501,19 +501,10 @@ background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, F
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(1.5);
 }
-<<<<<<< HEAD
-#contactus-page
-{
-    background: #f857a6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
+
 .stats-main {
 .events-shape {
-=======
 .events-shape-technical {
->>>>>>> 2990dc85bf9ed6b8a59b2a8f7a93617c9ff639af
     position: relative;
     justify-content: center;
     overflow: hidden;
@@ -1041,6 +1032,85 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     border-color: transparent transparent #ff6d36 transparent;
     border-width: 0 5px 5px 0;
   }
+  //Contact us
+  .our-team{ text-align: center; }
+.our-team .pic{
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.our-team .pic:before,
+.our-team .pic:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 100px 0 0 rgba(255, 255, 255, 0.01) inset, 0 100px 0 rgba(255, 255, 255, 0.01) inset, -100px 0 0 rgba(255, 255, 255, 0.01) inset, 0 -100px 0 rgba(255, 255, 255, 0.01) inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 300ms linear 0s;
+}
+.our-team .pic:after{
+    transform: rotate(45deg);
+}
+.our-team:hover .pic:after,
+.our-team:hover .pic:before{
+    box-shadow: 5px 0 0#FEDC0D inset, 0 5px 0 #F7343C inset, -5px 0 0 #41A6DF inset, 0 -5px 0 #F7343C inset;
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 300ms linear 0s;
+}
+.our-team:hover .pic img{
+    transform: scale(1.1);
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d33f49;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #333;
+    text-transform: capitalize;
+}
+.our-team .social{
+    padding: 0;
+    margin: 25px 0 0 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0 15px 0 15px;
+    background: #d33f49;
+    font-size: 15px;
+    color: #fff;
+    transition: all 300ms linear 0s;
+}
+.our-team:hover .social li a{
+    border-radius: 15px 0 15px 0;
+    background: #eca400;
+}
+@media only screen and (max-width: 767px){
+    .our-team{ margin-bottom: 30px; }
+}
   
   @-webkit-keyframes eyesanimation {
     0% {
