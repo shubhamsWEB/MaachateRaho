@@ -1,107 +1,128 @@
 ﻿<center>
     <div class="lottieloader" ng-show="home.loading">
-        <lottie-player
-        src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay >
+        <lottie-player src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"
+            background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay>
     </div>
 </center>
-<div ng-hide="home.loading" class="z-index1">  
-<section id="home-landing-section">
-    <div style="align-items: center; justify-content: center;">
-        <img src="App/images/homelogo.png" class="img-center animated infinite pulse" alt="Samvid2020" />
-    </div>
-</section>
- <section id="home-about-section">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="heading" style="z-index: 99999; text-align: center;">ABOUT US</h1>
-            </div>
-        <div class="col-md-5 mobileview">
-            <lottie-player src="https://assets2.lottiefiles.com/temp/lf20_R4avlk.json"  background="transparent"  speed=".5" class="aboutus-svg" loop  autoplay >
-            </lottie-player>
-        </div> 
-    <div class="col-md-7" style="text-align:right;">
-            <p class="sub-heading">
-                Samvid, SSTC Bhilai the largest cultural festival in Central India, present you yet another mind-boggling edition of its 2-day extravaganza. This time as you walk down the lanes of the campus, let’s together orchestrate the times we have lived through. And to help you make another one of those cherished memories, SSTC is ready and waiting for you, this 23rd February to 24th February<br>
-                <span class="tagline">
-                     See you at Samvid ‘20!<br>
-                            #MachaateyRaho
-                </span>            
-            </p>
-     </div>
-     <div class="col-md-5 laptopview">
-    <lottie-player src="https://assets2.lottiefiles.com/temp/lf20_R4avlk.json"  background="transparent"  speed=".5" class="aboutus-svg" loop  autoplay >
-    </lottie-player>
-</div>
-</div>
-</section>
+<div ng-hide="home.loading" class="z-index1">
 
-<section id="home-stats-section">
+    <section id="animation" class="mobileview">
+        <div class="marvel-wrapper run-animation" id="animate">
+            <div class="logo">
+
+                <span class="marvel">SAMVID</span>
+                <span class="studios">2020</span>
+
+            </div>
+        </div>
+
+        <div class="images"></div>
+    </section>
+    <section id="home-landing-section" class="laptopview">
+        <div style="align-items: center; justify-content: center;">
+            <img src="App/images/homelogo.png" class="img-center animated infinite pulse" alt="Samvid2020" />
+        </div>
+    </section>
+    <section id="home-about-section">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="heading" style="z-index: 99999; text-align: center;">ABOUT US</h1>
+            </div>
+            <div class="col-md-5 mobileview">
+                <lottie-player src="https://assets2.lottiefiles.com/temp/lf20_R4avlk.json" background="transparent"
+                    speed=".5" class="aboutus-svg" loop autoplay>
+                </lottie-player>
+            </div>
+            <div class="col-md-7" style="text-align:right;">
+                <p class="sub-heading">
+                    Samvid, SSTC Bhilai the largest cultural festival in Central India, present you yet another
+                    mind-boggling edition of its 2-day extravaganza. This time as you walk down the lanes of the campus,
+                    let’s together orchestrate the times we have lived through. And to help you make another one of
+                    those cherished memories, SSTC is ready and waiting for you, this 23rd February to 24th February<br>
+                    <span class="tagline">
+                        See you at Samvid ‘20!<br>
+                        #MachaateyRaho
+                    </span>
+                </p>
+            </div>
+            <div class="col-md-5 laptopview">
+                <lottie-player src="https://assets2.lottiefiles.com/temp/lf20_R4avlk.json" background="transparent"
+                    speed=".5" class="aboutus-svg" loop autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-stats-section">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="heading" style="z-index: 99999; text-align: center;">STATS</h1>
             </div>
             <div class="col-md-6">
-        <lottie-player
-        src="https://assets7.lottiefiles.com/temp/lf20_EVDaJ0.json"  background="transparent"  speed="1" class="stats-svg" loop  autoplay >
-    </lottie-player>
-    </div>
-    <div class="col-md-6">
-        <div class="col-md-12" style="text-align: center; margin-top: 10%;">
-            <h1 class="stats-heading">50+ <span class="stats-content">Events</span></h1>
+                <lottie-player src="https://assets7.lottiefiles.com/temp/lf20_EVDaJ0.json" background="transparent"
+                    speed="1" class="stats-svg" loop autoplay>
+                </lottie-player>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12" style="text-align: center; margin-top: 10%;">
+                    <h1 class="stats-heading">50+ <span class="stats-content">Events</span></h1>
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    <h1 class="stats-heading">17K+ <span class="stats-content">Footfall</span></h1>
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    <h1 class="stats-heading">20K+ <span class="stats-content">Audience</span></h1>
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    <h1 class="stats-heading">20K+ <span class="stats-content">Footfall</span></h1>
+                </div>
+            </div>
         </div>
-        <div class="col-md-12" style="text-align: center;">
-            <h1 class="stats-heading">17K+ <span class="stats-content">Footfall</span></h1>
+    </section>
+    <div id="wrapper">
+        <div id="spiderman">
+            <div class="head">
+                <div class="eye-left"></div>
+                <div class="eye-right"></div>
+            </div>
+            <div class="body">
+                <div class="spider"></div>
+                <div class="arm-left"></div>
+                <div class="arm-right"></div>
+            </div>
+            <div class="legs">
+                <div class="boot-left"></div>
+                <div class="boot-right"></div>
+            </div>
         </div>
-        <div class="col-md-12" style="text-align: center;">
-            <h1 class="stats-heading">20K+ <span class="stats-content">Audience</span></h1>
-        </div>
-        <div class="col-md-12" style="text-align: center;">
-            <h1 class="stats-heading">20K+ <span class="stats-content">Footfall</span></h1>
-        </div>        
     </div>
-        </div> 
- </section>
- <div id="wrapper">
-    <div id="spiderman">
-      <div class="head">
-        <div class="eye-left"></div>
-        <div class="eye-right"></div>
-      </div>
-      <div class="body">
-        <div class="spider"></div>
-        <div class="arm-left"></div>
-        <div class="arm-right"></div>
-      </div>
-      <div class="legs">
-        <div class="boot-left"></div>
-        <div class="boot-right"></div>
-      </div>
-    </div>
-  </div>
-<section id="home-theme-section">
-    <center>
-        <h1 class="heading" style="color: #f2aa4cff;">THEME</h1>
+    <section id="home-theme-section">
+        <center>
+            <h1 class="heading" style="color: #f2aa4cff;">THEME</h1>
         </center>
-       <div class="row"> 
-       <div class="col-md-12" style="text-align:center;">
-               <p class="sub-heading">
-                What is life without colours ? Nothing.
-                What is Sea without Water ? Nothing.
-                What is college Fest without a theme ? Nothing.
-                
-                This year 2020, we are Proudly presenting you the theme of SAMVID 2020 the mind blowing and very colourful COMICON.
-                Yes, you heard it right, this SAMVID is COMICON based SAMVID where everything is not just Normal, it is going to be filled with Superheroes, Cartoons and a bit  of surprise that we have added from our side that you will absolutely fall in love with when you visit the Fest.<span style="color:darkorchid;font-size: 2rem;">
-                       <br>Come and feel the fun. See you at Samvid ‘20!<br>
-                               #MachaateyRaho
-                   </span>            
-               </p>
-        </div>
-   </div>
-</section>
+        <div class="row">
+            <div class="col-md-12" style="text-align:center;">
+                <p class="sub-heading">
+                    What is life without colours ? Nothing.
+                    What is Sea without Water ? Nothing.
+                    What is college Fest without a theme ? Nothing.
 
-<!-- <section id="home-footer-section">
+                    This year 2020, we are Proudly presenting you the theme of SAMVID 2020 the mind blowing and very
+                    colourful COMICON.
+                    Yes, you heard it right, this SAMVID is COMICON based SAMVID where everything is not just Normal, it
+                    is going to be filled with Superheroes, Cartoons and a bit of surprise that we have added from our
+                    side that you will absolutely fall in love with when you visit the Fest.<span
+                        style="color:darkorchid;font-size: 2rem;">
+                        <br>Come and feel the fun. See you at Samvid ‘20!<br>
+                        #MachaateyRaho
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="home-footer-section">
     <footer>
 
     </footer>
 </section> -->
-
