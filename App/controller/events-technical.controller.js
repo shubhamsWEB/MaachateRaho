@@ -4,8 +4,9 @@
         var vm = this;
         vm.show = function() {
         angular.forEach(document.getElementsByClassName('evt'),function(element,key) {
-            element.setAttribute("aria-expanded",true);
-            console.log(element.getAttribute("aria-expanded"));
+            if(element.classList.contains("show")) {
+                element.classList.remove("show");
+            }
         });
     };
     };

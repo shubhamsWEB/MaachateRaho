@@ -1,6 +1,8 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');@font-face {
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+@font-face {
 	font-family: 'badaboom';
 	src: url(../App/fonts/BADABB__.TTF);
 	font-style: normal;
@@ -224,6 +226,9 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     }
     .sub-events {
         font-size: 1rem !important;
+    }
+    .event-details h1 {
+      font-size: 3.4rem !important;
     }
     .stats-svg {
     width: 250px;
@@ -562,12 +567,17 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
 }
 .sub-events {
     font-family: 'Kanit', sans-serif;
-    color: #fff !important;
+    color: ivory !important;
     font-size: 1.5rem;
   }
  .event-details {
      background: transparent !important;
      border: none !important;
+     font-family: 'Zhi Mang Xing', cursive;
+     color: ivory;
+ }
+ .event-details h1 {
+   font-size: 6rem;
  }
  /* Underline From Center */
 .hvr-underline-from-center {
