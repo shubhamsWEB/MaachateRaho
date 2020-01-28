@@ -121,11 +121,10 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
      float: right;
 }
 .stats-svg {
-    width: 400px;
-     height: 400px;
+    width: 500px;
+     height: 500px;
     border-radius: 110px;
-     margin-top: 5%;
-    margin-left: 2%;
+    margin-left: 20%;
      float: left;
 }
 .img-center {
