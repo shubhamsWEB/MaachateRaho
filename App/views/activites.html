@@ -1,10 +1,57 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+﻿
+<style>
 
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+html{height:100%;}
+body {overflow:hidden;width:100%;height:100%;
+  background: url("http://cdn3.artofthetitle.com/assets/sm/upload/3k/7e/f2/lj/ih_marvel_03.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Anton', sans-serif;
+  text-align:center;
+}
+
+body:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, .8);
+}
+
+h1 {  
+  position: absolute;
+  top:50%;left:50%;
+  z-index: 2;
+  margin-left:-29vw;
+  margin-top:-10vw;
+  font-size: 20vw;
+  font-weight: 500;
+  color: transparent;
+  text-align: center;
+  background: url("http://cdn3.artofthetitle.com/assets/sm/upload/3k/7e/f2/lj/ih_marvel_03.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-clip: text;
+  line-height: 1;  
+  vertical-align:middle;
+  cursor:none;
+}
+</style>
+
+
+<h1>SAMVID CONCLAVE</h1>
+
+<script>
+$(document).on("mousemove", function(event) {
+  $("h1").css({
+    "top": event.pageY,
+    "left": event.pageX
+  });
+});
+
+
+</script>
+
