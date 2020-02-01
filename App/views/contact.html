@@ -1,420 +1,4 @@
-﻿<!-- <style>
-  .our-team{ text-align: center; }
-.our-team .pic{
-    display: inline-block;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
-}
-.our-team .pic:before,
-.our-team .pic:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 100px 0 0 rgba(255, 255, 255, 0.01) inset, 0 100px 0 rgba(255, 255, 255, 0.01) inset, -100px 0 0 rgba(255, 255, 255, 0.01) inset, 0 -100px 0 rgba(255, 255, 255, 0.01) inset;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 300ms linear 0s;
-}
-.our-team .pic:after{
-    transform: rotate(45deg);
-}
-.our-team:hover .pic:after,
-.our-team:hover .pic:before{
-    box-shadow: 5px 0 0#FEDC0D inset, 0 5px 0 #F7343C inset, -5px 0 0 #41A6DF inset, 0 -5px 0 #F7343C inset;
-}
-.our-team .pic img{
-    width: 100%;
-    height: auto;
-    transform: scale(1);
-    transition: all 300ms linear 0s;
-}
-.our-team:hover .pic img{
-    transform: scale(1.1);
-}
-.our-team .title{
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    color: #d33f49;
-    letter-spacing: 1px;
-    margin: 0 0 5px 0;
-}
-.our-team .post{
-    display: block;
-    font-size: 15px;
-    color: #333;
-    text-transform: capitalize;
-}
-.our-team .social{
-    padding: 0;
-    margin: 25px 0 0 0;
-    list-style: none;
-}
-.our-team .social li{
-    display: inline-block;
-    margin-right: 5px;
-}
-.our-team .social li a{
-    display: block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 0 15px 0 15px;
-    background: #d33f49;
-    font-size: 15px;
-    color: #fff;
-    transition: all 300ms linear 0s;
-}
-.our-team:hover .social li a{
-    border-radius: 15px 0 15px 0;
-    background: #eca400;
-}
-@media only screen and (max-width: 767px){
-    .our-team{ margin-bottom: 30px; }
-}
-</style>
-
-
-<center>
-  <div class="lottieloader" ng-show="contact.loading">
-      <lottie-player
-      src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay >
-  </div>
-</center>
-<div ng-hide="contact.loading" class="z-index1">
-  <div id="contact-page">
-      <center>
-          <h1 class="heading" style="color: #f2aa4cff;" >Our Team</span></h1>
-      </center> 
-      <div class="container contact-page">
-        <div class="container">
-          <div class="row">
-              <div class="col-sm-4">
-                  <div class="our-team">
-                      <div class="pic">
-                          <img src="App/images/me1.jpeg">
-                      </div>
-                      <h3 class="title">Shubham Agrawal</h3>
-                      <span class="post">Web Developer</span>
-                      <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-twitter"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="App/images/con1.jpg">
-                    </div>
-                    <h3 class="title">Aditya Naidu</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#" class="fab fa-facebook"></a></li>
-                        <li><a href="#" class="fab fa-twitter"></a></li>
-                        <li><a href="#" class="fab fa-google-plus"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="our-team">
-                  <div class="pic">
-                      <img src="App/images/con1.jpg">
-                  </div>
-                  <h3 class="title">Aditya Naidu</h3>
-                  <span class="post">Web Developer</span>
-                  <ul class="social">
-                      <li><a href="#" class="fab fa-facebook"></a></li>
-                      <li><a href="#" class="fab fa-twitter"></a></li>
-                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                  </ul>
-              </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="App/images/con1.jpg">
-                </div>
-                <h3 class="title">Aditya Naidu</h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-facebook"></a></li>
-                    <li><a href="#" class="fab fa-twitter"></a></li>
-                    <li><a href="#" class="fab fa-google-plus"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="our-team">
-              <div class="pic">
-                  <img src="App/images/con1.jpg">
-              </div>
-              <h3 class="title">Aditya Naidu</h3>
-              <span class="post">Web Developer</span>
-              <ul class="social">
-                  <li><a href="#" class="fab fa-facebook"></a></li>
-                  <li><a href="#" class="fab fa-twitter"></a></li>
-                  <li><a href="#" class="fab fa-google-plus"></a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="our-team">
-            <div class="pic">
-                <img src="App/images/con1.jpg">
-            </div>
-            <h3 class="title">Aditya Naidu</h3>
-            <span class="post">Web Developer</span>
-            <ul class="social">
-                <li><a href="#" class="fab fa-facebook"></a></li>
-                <li><a href="#" class="fab fa-twitter"></a></li>
-                <li><a href="#" class="fab fa-google-plus"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="our-team">
-          <div class="pic">
-              <img src="App/images/con1.jpg">
-          </div>
-          <h3 class="title">Aditya Naidu</h3>
-          <span class="post">Web Developer</span>
-          <ul class="social">
-              <li><a href="#" class="fab fa-facebook"></a></li>
-              <li><a href="#" class="fab fa-twitter"></a></li>
-              <li><a href="#" class="fab fa-google-plus"></a></li>
-          </ul>
-      </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="our-team">
-        <div class="pic">
-            <img src="App/images/con1.jpg">
-        </div>
-        <h3 class="title">Aditya Naidu</h3>
-        <span class="post">Web Developer</span>
-        <ul class="social">
-            <li><a href="#" class="fab fa-facebook"></a></li>
-            <li><a href="#" class="fab fa-twitter"></a></li>
-            <li><a href="#" class="fab fa-google-plus"></a></li>
-        </ul>
-    </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-<div class="col-sm-4">
-  <div class="our-team">
-      <div class="pic">
-          <img src="App/images/con1.jpg">
-      </div>
-      <h3 class="title">Aditya Naidu</h3>
-      <span class="post">Web Developer</span>
-      <ul class="social">
-          <li><a href="#" class="fab fa-facebook"></a></li>
-          <li><a href="#" class="fab fa-twitter"></a></li>
-          <li><a href="#" class="fab fa-google-plus"></a></li>
-      </ul>
-  </div>
-</div>
-       
-              <div class="col-sm-4">
-                  <div class="our-team">
-                      <div class="pic">
-                          <img src="App/images/con1.jpg">
-                      </div>
-                      <h3 class="title">Kristiana</h3>
-                      <span class="post">Web Designer</span>
-                      <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-twitter"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-        
-
-         
-      </div>
-      
-      
-                 <script type="text/javascript">
-                  var or =[
-                'https://preview.uideck.com/items/interior/assets/images/team/team-1.jpg',
-                'https://preview.uideck.com/items/interior/assets/images/team/team-2.jpg',
-                'https://preview.uideck.com/items/interior/assets/images/team/team-3.jpg'
-                ];
-                var or_hover = [
-                'https://preview.uideck.com/items/interior/assets/images/about/about-2.jpg',
-                'https://preview.uideck.com/items/interior/assets/images/about/about-1.jpg',
-                'https://preview.uideck.com/items/interior/assets/images/banner/banner-image.jpg'
-                ]
-                
-                for(var i=0;i<or.length;i++) {
-                $('#m_div').append('<img style="" class="don" onmouseout="this.src=this.getAttribute(\'data-src\')" onmouseover="this.src=this.getAttribute(\'data-src-hover\')" data-src='+or[i]+' data-src-hover='+or_hover[i]+' src='+or[i]+' >');
-                }
-                </script>  -->
-
-<section class="events" style="background: rgb(145, 83, 202);">
+﻿<section class="events" style="background: rgb(145, 83, 202);">
     <div class="container events-shape-contact">
         <div class="row">
             <div class="col-md-12">
@@ -433,63 +17,63 @@
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#RoboRace" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Cultural" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Cultural</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#RoboSumo" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Informals" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Informals</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#Model" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Conclave" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Conclave</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#MyInnovation" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Sports" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Sports</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#CircuitDesigning" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#PnP" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Print & Publicity</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#BridgeIt" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Hospitality" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Hospitality</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#Rocket" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Operations" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Operations</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#ShockWave" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#SocialMedia" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Social Media</span>
                         </a>
                     </li>
                     <li>
                         <a class="btn btn-block text-left" data-toggle="collapse"
-                            data-target="#TechnoRace" aria-expanded="false" ng-click="contact.show()"
+                            data-target="#Vigilance" aria-expanded="false" ng-click="contact.show()"
                             aria-controls="collapseExample">
                             <span class="sub-events hvr-underline-from-center">Vigilance</span>
                         </a>
@@ -499,138 +83,156 @@
             <div class="col-md-8">
                 <div class="collapse evt show" id="website">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Web Site</h1>
                         <div class="row">
-                            <div class="col-md-5 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
-                                <div class="overlay">Hello</div>
+                                <div class="middle">
+                                    <h4>Shubham Agrawal</h4>
+                                    <h5>+919617874449</h5>
+                                    <h5>shubhama664@gmail.com</h5>
+                                </div>
                             </div>
-                            <div class="col-md-5 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me2.png">
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="RoboRace">
+                <div class="collapse evt" id="Cultural">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Cultural</h1>
                         <div class="row">
-                            <div class="col-md-5 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-5 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/01.png">
                             </div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="RoboSumo">
+                <div class="collapse evt" id="Informals">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Informals</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="Model">
+                <div class="collapse evt" id="Conclave">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Conclave</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="MyInnovation">
+                <div class="collapse evt" id="Sports">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Sports</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="CircuitDesigning">
+                <div class="collapse evt" id="PnP">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Print & Publicity</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="BridgeIt">
+                <div class="collapse evt" id="Hospitality">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Hospitality</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="Rocket">
+                <div class="collapse evt" id="Operations">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Operations</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="ShockWave">
+                <div class="collapse evt" id="SocialMedia">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Social Media</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse evt" id="TechnoRace">
+                <div class="collapse evt" id="Vigilance">
                     <div class="card card-body event-details">
+                        <h1 class="text-center">Vigilance</h1>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-5 mt-2 overlay">
                                 <img class="con-img" src="App/images/me1.png">
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
