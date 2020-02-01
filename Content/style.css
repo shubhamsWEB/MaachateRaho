@@ -221,7 +221,6 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
         color:darkorchid;
         font-size: 1.8rem;
         text-shadow: 1px 1px #FFBA54 ;
-
     }
     .aboutus-svg {
         width: 100%;
@@ -594,7 +593,24 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     height: 100%;
     background: rgb(46, 199, 115);
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  } 
+  }
+  
+  .events-shape-contact {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.events-shape-contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(108, 59, 155);
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  }
 
 #home-stats-section {
     position: relative;
@@ -1429,4 +1445,25 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     font-size: 3rem;
     color: ivory;
     font-family: badaboom;
+  }
+  .con-img {
+    width: 100%;
+    height:300px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+  
+  /* When you mouse over the container, fade in the overlay icon*/
+  .con:hover .overlay {
+    opacity: .5;
   }
