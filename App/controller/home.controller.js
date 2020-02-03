@@ -54,5 +54,25 @@
             }, false);
         }
 
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 2180 || document.documentElement.scrollTop > 2180) {
+                var logo = document.getElementById("samvidlogo");
+                logo.style.height = '550px';
+                logo.style.width = '550px';
+                logo.style.top = '50%';
+                logo.style.left = '50%';
+                logo.style.transform = 'translate(-50%,-50%)';
+
+            } else {
+                var logo = document.getElementById("samvidlogo");
+                logo.style.height = '140px';
+                logo.style.width = '140px';
+                logo.style.top = '0';
+                logo.style.left = '0';
+                logo.style.transform = 'translate(0,0)';
+            }
+        }
     };
 })();

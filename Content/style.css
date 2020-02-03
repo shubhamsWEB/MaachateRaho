@@ -19,6 +19,12 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+#samvidlogo {
+  position: fixed;
+  width: 140px;
+   height:140px;
+   transition: 2s ease-in-out;
+}
 .mojo-animation {
     text-decoration: none !important;
     color: #673ab7 !important;
@@ -68,21 +74,18 @@ html {
 #home-stats-section {
     width: 100vw;
     height: 100vh;
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background: rgb(178, 228, 87);
+  }
 #home-theme-section {
     width: 100vw;
     height: 100vh;
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  }
 #home-footer-section {
     width: 100vw;
-    height: 100vh;
-}
+    min-height: 100vh;
+    height: 100%;
+    background: rgb(178, 228, 87);
+  }
 #aboutus-page {
     width: 100vw;
     height: auto;
@@ -217,6 +220,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     .sub-heading {
         font-size: 1.2rem;
     }
+    
     .tagline {
         color:darkorchid;
         font-size: 1.8rem;
@@ -1551,3 +1555,22 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   .middle h4:hover, .middle h5:hover {
     color: #fff;
   }
+  #home-footer-section ul {
+    list-style-type: none;
+  }
+  #home-footer-section ul li {
+    font-size: 1.5rem;
+  }
+  #home-footer-section ul li a {
+    font-family: Kanit, sans-serif;
+    color: #212529;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+  }
+  #home-footer-section ul li a:hover {
+    color: ivory;
+  }
+  .icon {
+    width: 5vw;
+  }
+  
