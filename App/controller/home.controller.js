@@ -59,8 +59,8 @@
         function scrollFunction() {
             if (document.body.scrollTop > 2180 || document.documentElement.scrollTop > 2180) {
                 var logo = document.getElementById("samvidlogo");
-                logo.style.height = '550px';
-                logo.style.width = '550px';
+                logo.style.height = '400px';
+                logo.style.width = '400px';
                 logo.style.top = '50%';
                 logo.style.left = '50%';
                 logo.style.transform = 'translate(-50%,-50%)';
