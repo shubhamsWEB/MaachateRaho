@@ -1,127 +1,50 @@
-<section class="events" style="background: rgb(80, 236, 150);">
-    <div class="container events-shape-conclave">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="heading" style="z-index: 99999; text-align: center;">CONCLAVE</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 lists">
-                <ul class="event-list">
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#RoboSoccer" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Robo Soccer</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#RoboRace" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Robo Race</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#RoboSumo" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Robo Sumo</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#Model" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Model</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#MyInnovation" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">My Innovation</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#CircuitDesigning" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Circuit Designing</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#BridgeIt" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Bridge It</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#Rocket" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Rocket</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#ShockWave" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Shock Wave</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn btn-block hvr-underline-from-center text-left" data-toggle="collapse"
-                            data-target="#TechnoRace" aria-expanded="false" ng-click="conclave.show()" aria-controls="collapseExample">
-                            <span class="sub-events">Techno Race</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <div class="collapse evt show" id="RoboSoccer">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Robo Soccer</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="RoboRace">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Robo Race</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="RoboSumo">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Robo Sumo</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="Model">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Model Making</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="MyInnovation">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">My Innovation</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="CircuitDesigning">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Circuit Designing</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="BridgeIt">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Bridge It</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="Rocket">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Rocket Making</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="ShockWave">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Shock Wave</h1>
-                    </div>
-                </div>
-                <div class="collapse evt" id="TechnoRace">
-                    <div class="card card-body event-details">
-                        <h1 class="text-center">Techno Race</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+<center>
+    <div class="lottieloader" ng-show="about.loading">
+        <lottie-player
+        src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay >
     </div>
-</section>
+</center>
+<div ng-hide="about.loading" class="z-index1">
+    <div id="conclave-page">
+        <center>
+            <h1 class="heading" style="color: #f2aa4cff;">CONCLAVE<span style="color:darkorchid ;"> 2.0</span></h1>
+        </center> 
+        <div class="row mt-4" style="padding-left: 10%; padding-right: 10%;">
+            <div class="col-md-12 aboutus-content shadow-sm">
+                <center>
+                <h2 class="aboutus-heading"><a href="" class="mojo-animation">What is ‘the ideas conclave’ event ?</a></h2>
+                <p class="aboutus-details">
+                    The ideas conclave is not mere an event, it’s a carnival of ideas and inspirations that not just aspires its audience but also entertains them.
+The ideas conclave is a blend of performances where we create a unique gathering in our community that inspire and inform. The content and design of each CONCLAVE performance is unique and developed independently, but all of them have features in common.
+                </p>
+                
+                <h2 class="aboutus-heading"><a href="" class="mojo-animation">CONCLAVE’s Format</a></h2>
+                <p class="aboutus-details">
+                    Imagine a day where you get inspired and motivated with touch of Entertainment and humour. The Ideas CONCLAVE PROVIDE A thought provoking Speakers and mind blowing performances.<br>
+
+A suite of short, carefully prepared talks, demonstrations and performances that are idea-focused, and cover a wide range of subjects to foster learning, inspiration and wonder – and provoke conversations that matter.</p>
+<h2 class="aboutus-heading"><a href="" class="mojo-animation">Diversity of Topics</a></h2>
+<p class="aboutus-details">
+    All Conclave performance present multiple sides of society and a diversity of voices from different disciplines.</p>               
+
+<p class="aboutus-details" style="font-size: 1.6rem;">
+                    Come and feel the fun. See you at Samvid ‘20!<br>
+                    <span class="aboutus-tagline">#MachaateyRaho!</span>
+                </p>
+                </center>
+            </div>
+        </div>
+        <div class="aftermovie">   
+        <center>
+            <h1 class="heading" style="color: #f2aa4cff;">FEATURING-</span></h1><br>
+            <h2 class="heading" style="color: #f2aa4cff;">SAMAY RAINA</h2>
+            <div class="container">
+                <video width="100%" height="500" autoplay>
+                    <source src="App/video/vi.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  Your browser does not support the video tag.
+                  </video> </div>    
+        </center>
+        </div>
+    </section>
+</div>
