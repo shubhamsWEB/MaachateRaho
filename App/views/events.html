@@ -1,21 +1,21 @@
 ﻿<script>
-    $(".section").click(function() {
-	$(this).removeClass("shrink");
-	$(".section")
-		.not(this)
-		.each(function() {
-			$(this).addClass("shrink");
-		});
-	$(".active").removeClass("active");
-	$(this).addClass("active");
-});
+    $(".section").click(function () {
+        $(this).removeClass("shrink");
+        $(".section")
+            .not(this)
+            .each(function () {
+                $(this).addClass("shrink");
+            });
+        $(".active").removeClass("active");
+        $(this).addClass("active");
+    });
 </script>
 <center>
-        <div class="lottieloader" ng-show="home.loading">
-            <lottie-player
-            src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay >
-        </div>
-    </center>
+    <div class="lottieloader" ng-show="home.loading">
+        <lottie-player src="https://assets2.lottiefiles.com/datafiles/TGk8V8s3traDiWY/data.json"
+            background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay>
+    </div>
+</center>
 <div ng-hide="home.loading" class="event-container z-index1">
     <div class="conclave section">
         <div class="text">
@@ -27,26 +27,19 @@
             <button class="btn-block" ng-click="event.cultural()">CULTURAL</button>
         </div>
     </div>
-        <div class="sports section">
-            <div class="text">
-                <button class="btn-block" ng-click="event.sports()">SPORTS</button>
-            </div>
+    <div class="sports section">
+        <div class="text">
+            <button class="btn-block" ng-click="event.sports()">SPORTS</button>
         </div>
-        <div class="technical section">
-            <div class="text">
-                <button class="btn-block" ng-click="event.technical()">TECHNICAL</button>
-            </div>
-        </div>
-        <div class="informals section">
-            <div class="text">
-                <button class="btn-block" ng-click="event.informals()">INFORMALS</button>
-            </div>
-        </div>
-        <div class="gaming section">
-            <div class="text">
-                <button class="btn-block" ng-click="event.gaming()">GAMING</button>
-            </div>
-        </div>
-        
-       
     </div>
+    <div class="technical section">
+        <div class="text">
+            <button class="btn-block" ng-click="event.technical()">TECHNICAL</button>
+        </div>
+    </div>
+    <div class="informals section">
+        <div class="text">
+            <button class="btn-block" ng-click="event.informals()">INFORMALS</button>
+        </div>
+    </div>
+</div>
