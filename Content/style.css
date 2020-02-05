@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Ma+Shan+Zheng|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
 @font-face {
 	font-family: 'badaboom';
 	src: url(../App/fonts/BADABB__.TTF);
@@ -794,6 +797,7 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
 
+  
   .event_content{
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
@@ -1531,47 +1535,47 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     font-size: 3.4rem;
     color: ivory;
     font-family: badaboom;
-    animation: font 1s ease-in-out infinite;
+    animation: font 1.5s ease-in-out infinite;
   }
   @keyframes font {
     0% {
       font-family: badaboom;
     }
     20% {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+      font-family: 'Lobster', cursive;
+        }
     40% {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+      font-family: 'Permanent Marker', cursive;   
+     }
     60% {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+      font-family: 'Ma Shan Zheng', cursive;
+        }
     80% {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+      font-family: 'Gloria Hallelujah', cursive;
+        }
     100% {
-      font-family: serif;
-    }
+      font-family: 'Carter One', cursive;
+        }
   }
   @-webkit-keyframes font {
     0% {
       font-family: badaboom;
     }
     20% {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+      font-family: 'Lobster', cursive;
+        }
     40% {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+      font-family: 'Permanent Marker', cursive;   
+     }
     60% {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+      font-family: 'Ma Shan Zheng', cursive;
+        }
     80% {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+      font-family: 'Gloria Hallelujah', cursive;
+        }
     100% {
-      font-family: badaboom;
-    }
+      font-family: 'Carter One', cursive;
+        }
   }
   .con-img {
     width: 100%;
@@ -1624,5 +1628,11 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   }
   .icon {
     width: 5vw;
+  }
+  .micon {
+    font-family: Kanit, sans-serif;
+    color: #212529;
+    text-decoration: none;
+    transition: .2s ease-in-out;
   }
   
