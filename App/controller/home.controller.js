@@ -61,6 +61,7 @@
                 var logo = document.getElementById("samvidlogo");
                 logo.style.height = '400px';
                 logo.style.width = '400px';
+                logo.style.position = 'fixed';
                 logo.style.top = '50%';
                 logo.style.left = '50%';
                 logo.style.transform = 'translate(-50%,-50%)';
