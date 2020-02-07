@@ -737,7 +737,7 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
       font-family: badaboom;
       color: ivory !important;
     text-align: left !important;
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 .sub-events {
     font-family: 'Kanit', sans-serif;
