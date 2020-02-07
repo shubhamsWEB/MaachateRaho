@@ -272,10 +272,10 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
         float: left;
     }
     .sub-events {
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
     }
     .event-details h1 {
-      font-size: 3.4rem !important;
+      font-size: 3.8rem !important;
     }
     .stats-svg {
     width: 250px;
@@ -830,6 +830,8 @@ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   .event_content{
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-weight: 500;
   }
   
   .event_prize{
