@@ -17,6 +17,15 @@
 	font-style: normal;
 	font-weight: normal;
 }
+.row {
+  margin-right: 0px !important;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -27,6 +36,11 @@ body {
   width: 140px;
    height:140px;
    transition: 2s ease-in-out;
+}
+#samvidlogo01 {
+  position: fixed;
+  width: 140px;
+  height: 140px;
 }
 .mojo-animation {
     text-decoration: none !important;
@@ -231,7 +245,12 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     .sub-heading {
         font-size: 1.2rem;
     }
-    
+    #samvidlogo {
+      display: none;
+    }
+    iframe {
+      margin-top: 0% !important;
+    }
     .tagline {
         color:darkorchid;
         font-size: 1.8rem;
@@ -284,6 +303,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
     .aboutus-details {
         font-size: 1.2rem;
     }
+  
 }
 
 #burger{
@@ -341,6 +361,7 @@ background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, 
       .contact-page {
             padding: 5%;
       }
+      
   }
   .z-index1 {
       z-index: 1;
